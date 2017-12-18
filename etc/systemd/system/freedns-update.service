@@ -1,0 +1,17 @@
+[Unit]
+Description=freedns-update
+
+[Service]
+#User=
+#Group=
+Type=simple
+ExecStart=/usr/bin/freedns-update.pl --daemon
+Restart=always
+TimeoutSec=infinity
+TimeoutStopSec=1s
+RuntimeDirectory=freedns-update
+PIDFile=/var/run/freedns-update/freedns-update.pid
+
+[Install]
+WantedBy=multi-user.target
+

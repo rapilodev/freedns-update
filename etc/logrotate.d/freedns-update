@@ -1,0 +1,9 @@
+/var/log/freedns-update/*.log {
+	rotate 7
+	daily
+	compress
+	missingok
+	postrotate
+	kill -HUP `cat /var/run/freedns-update/freedns-update.pid 2>/dev/null` 2>/dev/null || true
+	endscript
+}

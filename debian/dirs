@@ -1,0 +1,3 @@
+etc/freedns-update
+var/log/freedns-update
+usr/run/freedns-update

@@ -1,0 +1,36 @@
+#! /bin/sh -e
+# preinst script for freedns-update
+
+isUpstart() {
+    /sbin/init --version 2>/dev/null | grep -q 'upstart'
+    #echo "result=$?"
+    if [ "$?" = "0" ]; then
+        return 0
+    else 
+        return 1
+    fi
+}
+
+isSystemd() {
+    /bin/systemctl 2>/dev/null | grep -q '\-\.mount'
+    #echo "result=$?"
+    if [ "$?" = "0" ]; then
+        return 0
+    else 
+        return 1
+    fi
+}
+
+if isUpstart; then
+	stop freedns-update || echo "not installed, yet"
+fi
+
+if isSystemd; then
+	if systemctl is-active freedns-update; then
+		systemctl stop freedns-update
+	fi
+fi
+
+exit 0
+
+

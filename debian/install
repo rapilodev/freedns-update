@@ -1,0 +1,5 @@
+bin/freedns-update.pl /usr/bin
+etc/freedns-update/freedns-update.conf etc/freedns-update/
+etc/logrotate.d/freedns-update etc/logrotate.d/
+etc/systemd/system/freedns-update.service etc/systemd/system/
+etc/init/freedns-update.conf etc/init/

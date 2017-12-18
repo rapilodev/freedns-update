@@ -1,0 +1,12 @@
+freedns-update (0.01.0023) xenial; urgency=low
+  * add systemd support
+ -- Milan Chrobok <mc@radiopiloten.de>  Sun, 02 Apr 2017 11:17:09 +0230
+
+freedns-update (0.01.0019) trusty; urgency=low
+  * cleanup installation
+ -- Milan Chrobok <mc@radiopiloten.de>  Sat, 19 Jul 2016 11:17:09 +0230
+
+freedns-update (0.01.0015) precise; urgency=low
+  * fix logrotate really
+ -- Milan Chrobok <mc@radiopiloten.de>  Sat, 19 Apr 2014 11:17:09 +0230
+

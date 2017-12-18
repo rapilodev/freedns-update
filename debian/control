@@ -1,0 +1,22 @@
+Source: freedns-update
+Section: net
+Priority: optional
+Maintainer: Milan Chrobok <mc@radiopiloten.de>
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.3
+Homepage: https://launchpad.net/~mc-1/+archive/freedns-update
+
+Package: freedns-update
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends},
+ libconfig-general-perl,
+ libgetopt-long-descriptive-perl,
+ upstart,
+ logrotate,
+ wget
+Description: freedns-update
+ This service frequently checks your ip by using ip checker services in the web and 
+ updates one or multiple freedns_accounts with the detected IPs if they have changed.
+ This package comes with an upstart job at /etc/init/freedns-update.conf.
+ Logs will be written to /var/log/freedns-update/freedns-update.log and rotated by /etc/logrotate.d/freedns-update
