@@ -12,7 +12,6 @@ Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends},
  libconfig-general-perl,
  libgetopt-long-descriptive-perl,
- upstart,
  logrotate,
  wget
 Description: freedns-update

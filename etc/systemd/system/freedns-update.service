@@ -2,8 +2,6 @@
 Description=freedns-update
 
 [Service]
-#User=
-#Group=
 Type=simple
 ExecStart=/usr/bin/freedns-update.pl --daemon
 Restart=always
