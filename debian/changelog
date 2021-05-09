@@ -1,3 +1,7 @@
+freedns-update (0.3) focal; urgency=low
+  * update debian
+ -- Milan Chrobok <mc@radiopiloten.de>  Sun, 09 May 2021 00:00:00 +0230
+
 freedns-update (0.2) bionic; urgency=low
   * remove upstart dependency
  -- Milan Chrobok <mc@radiopiloten.de>  Wed, 10 Apr 2019 00:00:00 +0230
